@@ -8,9 +8,9 @@ export const generatePayload = (apiKey: string, messages: ChatMessage[]): Reques
   },
   method: 'POST',
   body: JSON.stringify({
-    model: 'gpt-3.5-turbo-0301',
+    model: 'gpt-3.5-turbo',
     messages,
-    temperature: 0,
+    temperature: 0.7,
     stream: true,
   }),
 })
